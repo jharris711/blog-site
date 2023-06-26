@@ -26,7 +26,7 @@ const ResetPasswordForm = () => {
     const email = formData.get('email')?.toString() || '';
 
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${location.origin}/api/auth/reset-callback`,
+      redirectTo: `https://jsharris.dev/api/auth/reset-callback`,
     });
 
     if (error) {
