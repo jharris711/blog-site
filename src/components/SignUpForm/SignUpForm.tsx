@@ -27,7 +27,7 @@ const SignUpForm = () => {
       email,
       password,
       options: {
-        emailRedirectTo: `${location.origin}/api/auth/callback`,
+        emailRedirectTo: `https://jsharris.dev/api/auth/callback`,
       },
     };
 
